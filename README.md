@@ -68,6 +68,7 @@ mvn clean
 mvn install
 mvn clean install
 mvn site
+mvn compile site
 ```
 
 Todos los resultados de maven se almacenan en la carpeta target
@@ -87,10 +88,14 @@ Lista de plugins:
 5. maven-surefire-report-plugin (reporting)
 6. maven-javadoc-plugin (en build con executions y en reporting sin executions)
 7. jacoco-maven-plugin (en build con executions y en reporting sin executions)
+8. maven-checkstyle-plugin (reporting)
 
 Ver API JDK completa:
 https://docs.oracle.com/en/java/javase/16/docs/api/index.html
 
+
+Docs:
+https://pmd.github.io/latest/pmd_rules_java.html
 
 
 
