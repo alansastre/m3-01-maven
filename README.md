@@ -76,7 +76,15 @@ Todos los resultados de maven se almacenan en la carpeta target
 
 ### 7. Plugins
 
-org.apache.maven.plugins
+Filtrar por org.apache.maven.plugins
+
+Lista de plugins:
+
+maven-clean-plugin
+maven-compiler-plugin
+maven-surefire-plugin
+maven-site-plugin
+maven-surefire-report-plugin
 
 
 
