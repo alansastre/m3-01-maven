@@ -51,6 +51,39 @@ Plantillas estructura de proyecto y dependencias
 
 https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html
 
+Ciclos de vida Maven:
+
+1. clean (3 fases): limpiar carpetas de desplegables, archivos compilados, archivos de compilaciones anteriores, etc
+2. default (23 fases): incluye las fases de compilar, construir, generar desplegable, etc
+3. site (4 fases): generar documentación para mantinimiento, javadoc, reportes de testing, etc.
+
+Cada ciclo incluye sus fases.
+
+#### 6.1 comandos 
+
+Nota: los comandos se ejecutan en la misma carpeta en la que está el archivo pom.xml
+
+```
+mvn clean
+mvn install
+mvn clean install
+mvn site
+```
+
+Todos los resultados de maven se almacenan en la carpeta target
+
+
+
+### 7. Plugins
+
+org.apache.maven.plugins
+
+
+
+
+
+
+
 
 
 
