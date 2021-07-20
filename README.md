@@ -80,11 +80,16 @@ Filtrar por org.apache.maven.plugins
 
 Lista de plugins:
 
-maven-clean-plugin
-maven-compiler-plugin
-maven-surefire-plugin
-maven-site-plugin
-maven-surefire-report-plugin
+1. maven-clean-plugin (build)
+2. maven-compiler-plugin (build)
+3. maven-surefire-plugin (build)
+4. maven-site-plugin (build)
+5. maven-surefire-report-plugin (reporting)
+6. maven-javadoc-plugin (en build con executions y en reporting sin executions)
+7. jacoco-maven-plugin (en build con executions y en reporting sin executions)
+
+Ver API JDK completa:
+https://docs.oracle.com/en/java/javase/16/docs/api/index.html
 
 
 
