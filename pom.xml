@@ -1,0 +1,80 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Identificación del proyecto -->
+	<groupId>com.example</groupId>
+	<artifactId>m3-01-maven</artifactId>
+	<version>2.0.1</version>
+
+	<!-- Informacion opcional metadatos -->
+	<url>http://localhost:8080/api</url>
+	<organization>
+		<name>Cosmic developments</name>
+		<url>http://localhost:8080/api</url>
+	</organization>
+	<name>Awesome app backend</name>
+	<description>Proyecto de prueba con entidades</description>
+
+	<packaging>jar</packaging>
+
+	<contributors>
+		<contributor>
+			<name>alan</name>
+			<organization>Cosmic developments</organization>
+		</contributor>
+	</contributors>
+
+	<licenses>
+		<license>
+			<name>MIT</name>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<name></name>
+		</developer>
+	</developers>
+
+	<!-- Propiedades -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>16</java.version>
+		<maven.compiler.source>16</maven.compiler.source>
+		<maven.compiler.target>16</maven.compiler.target>
+	</properties>
+
+	<!-- Dependencias -->
+
+	<dependencies>
+
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.8.0-M1</version>
+			<scope>test</scope>
+		</dependency>
+
+
+
+	</dependencies>
+
+	<!-- Reporting -->
+
+	<reporting>
+
+	</reporting>
+
+	<!-- Build -->
+	<build>
+
+	</build>
+
+
+
+
+
+</project>
