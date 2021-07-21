@@ -12,4 +12,15 @@ public class CalculatorTest {
 	void testSum() throws Exception {
 		assertEquals(4, calc.sum(2, 2));
 	}
+	
+	
+	@Test
+	void testSum2() throws Exception {
+		assertEquals(0, calc.sum(-2, 2));
+	}
+	
+	@Test
+	void testMult() throws Exception {
+		assertEquals(0, calc.mult(0, 0));
+	}
 }

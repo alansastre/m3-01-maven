@@ -163,16 +163,77 @@ wsl -l -v
 
 6. Crear container jenkins
 
+
+1. Imagenes
+
+2. Contenedores
+
 ```
-docker run --name jenkins -p 8080:8080 -d jenkins/jenkins:lts 
+docker run --name jenkins -p 8080:8080 -d jenkins/jenkins:lts
+
+docker logs -f jenkins
 ```
 
 
 
 
-Alternativa problemas: 
+### Alternativa problemas: 
 
 https://www.jenkins.io/download/
+
+Descargar .war
+
+http://jdk.java.net/java-se-ri/11
+
+En la CMD dentro de la carpeta donde esté el archivo jenkins.war
+
+```
+C:\Users\alanj\.jdks\jdk-11\bin\java -jar jenkins.war
+```
+
+Ver docs:
+https://www.jenkins.io/doc/book/installing/
+
+
+### CI / CD
+
+* Continuous integration: automatizar el proceso de compilación, construcción, testing, generar desplegables, etc.
+
+* Continuous delivery: automatizar el proceso de despliegue
+
+
+
+### Jenkins
+
+1. Instalar Plugins: 
+
+AdoptOpenJDK installer Plugin
+JaCoCo
+
+2. Crear tarea libre
+
+2.1 Indicar la ruta al repo git
+2.2. Crear maven goal: `clean install`
+2.3 Crear maven goal: `site`
+2.4 Agregar tareas para después
+	* JUnit: target/surefire-reports/*.xml
+	* Jacoco
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
