@@ -96,8 +96,23 @@ https://docs.oracle.com/en/java/javase/16/docs/api/index.html
 
 Docs:
 https://pmd.github.io/latest/pmd_rules_java.html
+https://pmd.github.io/latest/pmd_userdocs_cpd.html
+https://spotbugs.github.io/spotbugs-maven-plugin/usage.html
+
+### 8. Dependencias
+
+```
+<dependencies>
 
 
+</dependencies>
+```
+
+Scope:
+
+* test: solo para testing
+* provided: indica que quien provee la dependencia es el contenedor donde aloja/despliega la aplicacion (Ej: jsp, servlets, etc)
+* runtime: indica que es necesaria solo en tiempo de ejecución (Drivers de base de datos como mysql)
 
 
 
