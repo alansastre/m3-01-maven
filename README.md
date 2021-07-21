@@ -130,3 +130,50 @@ https://tomcat.apache.org/download-10.cgi
 
 
 ### Docker
+
+https://www.padok.fr/en/blog/docker-windows-10
+
+1. Activar características windows
+
+2. Instalar Ubuntu
+
+3. Abrir Ubuntu y crear usuario
+
+4. Instalar paquete WSL2 Linux Kernel, descargar de: 
+
+https://docs.microsoft.com/en-us/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
+
+Enlace directo:
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+
+5. Abrir Powershell y ejecutar:
+
+```
+wsl -l -v
+
+wsl --set-version Ubuntu 2
+
+wsl -l -v
+
+wsl --set-default-version 2
+
+wsl -l -v
+
+```
+
+6. Crear container jenkins
+
+```
+docker run --name jenkins -p 8080:8080 -d jenkins/jenkins:lts 
+```
+
+
+
+
+Alternativa problemas: 
+
+https://www.jenkins.io/download/
+
+
+
+
