@@ -205,12 +205,13 @@ https://www.jenkins.io/doc/book/installing/
 
 ### Jenkins
 
-1. Instalar Plugins: 
+#### 1. Instalar Plugins: 
 
 * AdoptOpenJDK installer
 * JaCoCo
+* Blue Ocean
 
-2. Crear tarea > Crear proyecto de estilo libre
+#### 2. Crear tarea > Crear proyecto de estilo libre
 
 * Indicar la ruta al repo git
 * Crear maven goal: `clean install`
@@ -219,7 +220,7 @@ https://www.jenkins.io/doc/book/installing/
 	* JUnit: target/surefire-reports/*.xml
 	* Jacoco
 	
-3. Crear pipeline
+#### 3. Crear pipeline
 
 * Crear Jenkinsfile
 * Inicializar git y hacer push a GitHub
@@ -227,13 +228,14 @@ https://www.jenkins.io/doc/book/installing/
 * Automaticamente se escanea y se construyen las ramas
 
 
-4. Visualizar el pipeline en Blue Ocean
+#### 4. Pipelines en Blue Ocean
 
 * Instalar plugin Blue Ocean y reiniciar
+* Visualizar pipelines en Blue Ocean
 * Crear pipeline desde Blue Ocean
 * Te pide generar token para conectar a GitHub
 
-5. Sonar Cloud
+#### 5. Sonar Cloud
 
 * Entrar en https://sonarcloud.io/
 * Crear nuevo proyecto a partir de un repositorio GitHub existente
@@ -245,18 +247,22 @@ https://www.jenkins.io/doc/book/installing/
 ```
 mvn verify sonar:sonar -Dsonar.projectKey=alansastre_m3-01-maven -Dsonar.organization=alansastre -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=6136e70b0e12ca0541d807cc501786ada66ec2cf -Dsonar.branch.name=master
 ```
+
 * Verificar que se analiza en sonarcloud.io
-* Agregar un nuevo step en Jenkinsfile incluyendo el comando maven para el análisis sonar
+* Modificar Jenkinsfile
+	* Agregar nuevo step con el comando de mvn verify sonar anterior
+	* Push al remoto
+* En jenkins ejecutar el pipeline
 
 
 
 
 
-6. GitHub Actions
+#### 6. GitHub Actions
 
-7. Gitlab
+#### 7. Gitlab
 
-8. Vercel / Netlify / Heroku
+#### 8. Vercel / Netlify / Heroku
 
 
 
