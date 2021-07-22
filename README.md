@@ -207,8 +207,8 @@ https://www.jenkins.io/doc/book/installing/
 
 1. Instalar Plugins: 
 
-AdoptOpenJDK installer Plugin
-JaCoCo
+* AdoptOpenJDK installer
+* JaCoCo
 
 2. Crear tarea > Crear proyecto de estilo libre
 
@@ -222,15 +222,35 @@ JaCoCo
 3. Crear pipeline
 
 * Crear Jenkinsfile
-* Push a GitHub
+* Inicializar git y hacer push a GitHub
 * En Jenkins crear tarea > Multibranch pipeline
-
-
+* Automaticamente se escanea y se construyen las ramas
 
 
 4. Visualizar el pipeline en Blue Ocean
 
+* Instalar plugin Blue Ocean y reiniciar
+* Crear pipeline desde Blue Ocean
+* Te pide generar token para conectar a GitHub
+
 5. Sonar Cloud
+
+* Entrar en https://sonarcloud.io/
+* Crear nuevo proyecto a partir de un repositorio GitHub existente
+* Set Up
+* Maven
+* Copiar el token
+* Ejecutar en eclipse el comando:
+
+```
+mvn verify sonar:sonar -Dsonar.projectKey=alansastre_m3-01-maven -Dsonar.organization=alansastre -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=6136e70b0e12ca0541d807cc501786ada66ec2cf -Dsonar.branch.name=master
+```
+* Verificar que se analiza en sonarcloud.io
+* Agregar un nuevo step en Jenkinsfile incluyendo el comando maven para el análisis sonar
+
+
+
+
 
 6. GitHub Actions
 
