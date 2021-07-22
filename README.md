@@ -210,14 +210,33 @@ https://www.jenkins.io/doc/book/installing/
 AdoptOpenJDK installer Plugin
 JaCoCo
 
-2. Crear tarea libre
+2. Crear tarea > Crear proyecto de estilo libre
 
-2.1 Indicar la ruta al repo git
-2.2. Crear maven goal: `clean install`
-2.3 Crear maven goal: `site`
-2.4 Agregar tareas para después
+* Indicar la ruta al repo git
+* Crear maven goal: `clean install`
+* Crear maven goal: `site`
+* Agregar tareas para después
 	* JUnit: target/surefire-reports/*.xml
 	* Jacoco
+	
+3. Crear pipeline
+
+* Crear Jenkinsfile
+* Push a GitHub
+* En Jenkins crear tarea > Multibranch pipeline
+
+
+
+
+4. Visualizar el pipeline en Blue Ocean
+
+5. Sonar Cloud
+
+6. GitHub Actions
+
+7. Gitlab
+
+8. Vercel / Netlify / Heroku
 
 
 
