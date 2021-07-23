@@ -205,6 +205,12 @@ https://www.jenkins.io/doc/book/installing/
 
 ### Jenkins
 
+Para ver la contraseña:
+
+```
+docker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+```
+
 #### 1. Instalar Plugins: 
 
 * AdoptOpenJDK installer
